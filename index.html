@@ -5,17 +5,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Zimbaboee</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body onload="init()">
 
-    <h1>omer</h1>
+    <header>
+        <h1>omer & shiri</h1>
+    </header>
 
+
+    <div>
+        <input class="input-text" onchange="changeTextColor()" type="color" value="#ff0000">
+        <input class="input-back" onchange="changeBackColor()" type="color" value="#ff0000">
+        <select>
+            <option id="0">SKETCHY</option>
+            <option id="1">SHADED</option>
+            <option id="2">CHROME</option>
+            <option id="3">FUR</option>
+            <option id="4">LONGFUR</option>
+            <option id="5">WEB</option>
+            <option id="6">SIMPLE</option>
+            <option id="7">SQUARES</option>
+            <option id="8">RIBBON</option>
+            <option id="9">CIRCLES</option>
+            <option id="10">GRID</option>
+        </select>
+        <button>save</button>
+        <button>clear</button>
+        <button>about</button>
+        
+    </div>
+    
+    <br><br>
+    <main>
+        <canvas height="500" width="500" id="paint-canvas"></canvas>
+    </main>
 
 
     <script src="js/main-service.js"></script>
+    <script src="js/main-rander-color.js"></script>
     <script src="js/main.js"></script>
     <script src="js/util.js"></script>
     <script src="lib/jquery/jquery.js"></script>
